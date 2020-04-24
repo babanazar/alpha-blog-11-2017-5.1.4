@@ -34,6 +34,14 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 
+gem 'figaro'
+
+gem 'capistrano'
+gem 'capistrano-bundler'
+gem 'capistrano-passenger'
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
+gem 'capistrano-figaro-yml'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
