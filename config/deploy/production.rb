@@ -7,8 +7,8 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-role :app, %w{bob@3.133.104.189}
-role :web, %w{bob@3.133.104.189}
+role :app, %w{ubuntu@3.133.104.189}
+role :web, %w{ubuntu@3.133.104.189}
 set :ssh_options, {
     keys: %w(/Users/mathics/Desktop/becaz/hello-world-staging/new-staging.pem),
     forward_agent: false,
