@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:babanazar/alpha-blog-11-2017-5.1.4.git"
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
-set :rvm_ruby_version, '2.5.1p57'
+set :rvm_ruby_version, '2.5.1'
 
 set :passenger_restart_with_touch, true
 # Default branch is :master
