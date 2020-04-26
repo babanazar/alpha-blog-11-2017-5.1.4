@@ -9,7 +9,6 @@
 
 role :app, %w{bob@3.133.104.189}
 role :web, %w{bob@3.133.104.189}
-role :db,  %w{bob@3.133.104.189}
 set :ssh_options, {
     keys: %w(/Users/mathics/Desktop/becaz/hello-world-staging/new-staging.pem),
     forward_agent: false,

@@ -1,9 +1,9 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.13.0"
 
 set :application, "alpha-blog-11-2017-5.1.4"
 set :repo_url, "git@github.com:babanazar/alpha-blog-11-2017-5.1.4.git"
 
+set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 set :rvm_ruby_version, '2.6.5p114'
