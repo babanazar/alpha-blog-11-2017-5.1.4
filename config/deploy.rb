@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
 
-set :application, "alpha-blog-11-2017-5.1.4"
+set :application, "alpha-blog"
 set :repo_url, "git@github.com:babanazar/alpha-blog-11-2017-5.1.4.git"
 
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
