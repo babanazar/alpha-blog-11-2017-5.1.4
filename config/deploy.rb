@@ -16,6 +16,8 @@ set :passenger_restart_with_touch, true
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/apps/blog"
 
+set :tmp_dir, "/home/deploy/tmp"
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
