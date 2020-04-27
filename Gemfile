@@ -64,6 +64,7 @@ group :development do
   gem 'capistrano-rvm'
   gem 'capistrano-figaro-yml'
 
+  set :rvm_type, :system
 end
 
 group :production do

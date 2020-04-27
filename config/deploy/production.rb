@@ -3,17 +3,18 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-# server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
+server "3.133.104.189", user: "deploy", roles: %w{app db web}
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-role :app, %w{ubuntu@3.133.104.189}
-role :web, %w{ubuntu@3.133.104.189}
-set :ssh_options, {
-    keys: %w(/Users/mathics/Desktop/becaz/hello-world-staging/new-staging.pem),
-    forward_agent: false,
-    auth_methods: %w(publickey password)
-}
+# role :app, %w{deploy@3.133.104.189}
+# role :web, %w{deploy@3.133.104.189}
+# role :db, %w{deploy@3.133.104.189}
+# set :ssh_options, {
+#     keys: %w(/Users/mathics/Desktop/becaz/hello-world-staging/new-staging.pem),
+#     forward_agent: false,
+#     auth_methods: %w(publickey password)
+# }
 
 # role-based syntax
 # ==================
