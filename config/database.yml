@@ -22,8 +22,9 @@ test:
 
 production:
   <<: *default
-  database: hello-world
-  username: hello_world
-  password: <%= ENV['HELLO_WORLD_DATABASE_PASSWORD'] %>
-  host: <%= ENV['HELLO_WORLD_DATABASE_HOST'] %>
-  port: <%= ENV['HELLO_WORLD_DATABASE_PORT'] %>
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  database: blog
+  username: blog
+  password: blog
